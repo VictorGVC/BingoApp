@@ -29,16 +29,24 @@
   --withe:#fafafa;
   --laranja:#f97316;
 }
+body a{
+  text-decoration: none;
+}
 body{
   background-color: var(--bg-color);
 }
 #voltar{
-  margin: 10PX 10%;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30PX 10%;
   color:var(--border-color);
   background-color: transparent;
   border: none;
   cursor: pointer;
   transition: 0.5s;
+  
 }
 #voltar:hover{
   color:var(--withe);
@@ -87,6 +95,37 @@ body{
   border-radius: 10px;
   height: 70%;
   margin-bottom: 20px;
+}
+#bola{
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  border: 3px solid var(--laranja);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--laranja);
+  background-color: var(--border-color);
+}
+#sortear{
+  margin: 10px auto;
+  display: block;
+  width: 90%;
+  height: 50px;
+  border: 2px solid var(--laranja);
+  border-radius: 10px;
+  background-color: var(--border-color);
+  color: var(--withe);
+  cursor: pointer;
+  transition: 0.5s;
+}
+#sortear:hover{
+  background-color: var(--roxo);
+  
+  transition: 0.5s;
 }
 #ultimos{
   border-radius: 10px;
