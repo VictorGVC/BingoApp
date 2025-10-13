@@ -21,12 +21,21 @@
 
   Isso ajuda a manter o código mais limpo, consistente e fácil de escalar.
 */
+:root{
+  font-family: "Poppins", sans-serif;
+  --bg-color: #1a1a1a;
+  --color:#ccc;
+  --conteudo-color:#2a2929 ;;
+  --border-color:#4b4b4f;
+  --roxo:#8a2be2;
+  --branco:#fafafa;
+  --laranja:#ff7b00;
+}
 body {
   margin: 0;
   height: 100vh;
-  background: #1a1a1a;
-  font-family: "Poppins", sans-serif;
-  color: #ccc;
+  background: var(--bg-color);
+  color: var(--color);
 }
 
 .centralize{
@@ -51,8 +60,8 @@ body {
     border: 2px solid;
     border-radius: 10px;
     background: transparent;
-    color: white;
-    border-color: #8a2be2;
+    color: var(--branco);
+    border-color: var(--roxo);
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
@@ -64,9 +73,109 @@ body {
     border: 2px solid;
     border-radius: 10px;
     background: transparent;
-    color: white;
-    border-color: #ff7b00;
+    color: var(--branco);
+    border-color: var(--laranja);
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
+}
+
+body a{
+  text-decoration: none;
+}
+
+#voltar{
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30PX 10%;
+  color:var(--border-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+#voltar:hover{
+  color:var(--color);
+  transition: 0.5s;
+}
+#title{
+  margin: 40px;
+  text-align: center; 
+}
+#title h3{
+  color: var(--branco)
+}
+#title h4{
+  color: var(--border-color)
+}
+#game{
+  margin: 24px 10%;
+  height: 90vh;
+  display: flex;
+}
+.content{
+  border: 2px solid var(--border-color);
+  background-color: var(--conteudo-color);
+}
+#left{
+  border-radius: 10px;
+  width: 48%;
+  height: 70%;
+  margin-right: 20px;
+
+}
+#left h3{
+  margin-left: 20px;
+  color: var(--color);
+}
+#right h3, h4{
+  margin-left: 20px;
+  color: var(--color);
+}
+#right{
+
+  width: 45%;
+  height: 70%;
+}
+#atual{
+  border-radius: 10px;
+  height: 70%;
+  margin-bottom: 20px;
+}
+#bola{
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  border: 3px solid var(--laranja);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--laranja);
+  background-color: var(--border-color);
+}
+#sortear{
+  margin: 10px auto;
+  display: block;
+  width: 90%;
+  height: 50px;
+  border: 2px solid var(--laranja);
+  border-radius: 10px;
+  background-color: var(--border-color);
+  color: var(--color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+#sortear:hover{
+  background-color: var(--roxo);  
+  transition: 0.3s;
+}
+#ultimos{
+  border-radius: 10px;
+  height: 25%;
 }
