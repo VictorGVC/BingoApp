@@ -21,3 +21,74 @@
 
   Isso ajuda a manter o código mais limpo, consistente e fácil de escalar.
 */
+:root{
+  --bg-color: #262626;
+  --conteudo-color:#2a2929 ;;
+  --border-color:#4b4b4f;
+  --roxo:#6b21a8;
+  --withe:#fafafa;
+  --laranja:#f97316;
+}
+body{
+  background-color: var(--bg-color);
+}
+#voltar{
+  margin: 10PX 10%;
+  color:var(--border-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#voltar:hover{
+  color:var(--withe);
+  transition: 0.5s;
+}
+#title{
+  margin: 40px;
+  text-align: center; 
+}
+#title h3{
+  color: var(--withe)
+}
+#title h4{
+  color: var(--border-color)
+}
+#game{
+  margin: 24px 10%;
+  height: 90vh;
+  display: flex;
+}
+.content{
+  border: 2px solid var(--border-color);
+  background-color: var(--conteudo-color);
+}
+#left{
+  border-radius: 10px;
+  width: 48%;
+  height: 70%;
+  margin-right: 20px;
+
+}
+#left h3{
+  margin-left: 20px;
+  color: var(--withe);
+}
+#right h3, h4{
+  margin-left: 20px;
+  color: var(--withe);
+}
+#right{
+
+  width: 45%;
+  height: 70%;
+}
+#atual{
+  border-radius: 10px;
+  height: 70%;
+  margin-bottom: 20px;
+}
+#ultimos{
+  border-radius: 10px;
+  height: 25%;
+}
