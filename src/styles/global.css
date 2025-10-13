@@ -1,0 +1,23 @@
+/* Nesse arquivo serão adicionado toda estilização global do projeto, isso é  *//* 
+  Este arquivo CSS é responsável pelos estilos gerais do projeto.
+
+  ➤ Caso algum estilo se repita em mais de uma tela (por exemplo, botões com o mesmo formato mas cores diferentes),
+    crie estilos componentizados e reutilizáveis. 
+    Exemplo:
+      .botao { padding, border-radius, fonte, etc... }
+      .botao--primario { cor de fundo, cor do texto... }
+      .botao--secundario { variação de cor... }
+
+  ➤ Como o projeto é temático e pode ter mudanças de tema no futuro,
+    defina todas as cores no :root usando variáveis CSS.
+    Exemplo:
+      :root {
+        --cor-primaria: #3498db;
+        --cor-secundaria: #2ecc71;
+        --cor-texto: #333;
+      }
+
+    Assim, para trocar o tema, basta alterar essas variáveis em um único lugar.
+
+  Isso ajuda a manter o código mais limpo, consistente e fácil de escalar.
+*/
