@@ -1,4 +1,4 @@
-/* Nesse arquivo serão adicionado toda estilização global do projeto, isso é  *//* 
+/* Nesse arquivo serão adicionado toda estilização global do projeto, isso é  */ /* 
   Este arquivo CSS é responsável pelos estilos gerais do projeto.
 
   ➤ Caso algum estilo se repita em mais de uma tela (por exemplo, botões com o mesmo formato mas cores diferentes),
@@ -21,19 +21,50 @@
 
   Isso ajuda a manter o código mais limpo, consistente e fácil de escalar.
 */
+
+:root {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  
+  --color-orange-400: #ffb25e;
+  --color-orange-500: #ff9a3e;
+  --color-orange-600: #f47c1b;
+  --color-orange-700: #d35d0e;
+  
+  --color-purple-400: #c194ff;
+  --color-purple-500: #a367ff;
+  
+  --color-neutral-100: #f7f7f7;
+  --color-neutral-200: #ebebeb;
+  --color-neutral-300: #dedede;
+  --color-neutral-400: #b4b4b4;
+  --color-neutral-500: #8e8e8e;
+  --color-neutral-600: #6f6f6f;
+  --color-neutral-700: #5d5d5d;
+  --color-neutral-800: #3f3f3f;
+  --color-neutral-900: #343434;
+  
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --border-radius-big: 0.875rem; /* 14px */
+  --border-radius-medium: 0.625rem; /* 10px */
+}
+
+
 body {
   margin: 0;
   height: 100vh;
-  background: #1a1a1a;
-  font-family: "Poppins", sans-serif;
-  color: #ccc;
+  background: var(--color-neutral-900);
+  font-family: var(--font-sans);
+  color: var(--color-white);
 }
 
-.centralize{
+.centralize {
   display: flex;
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  height:100vh;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh;
 }
 
 .container {
@@ -44,29 +75,28 @@ body {
   gap: 15px;
 }
 
-
-#btnHost{
-    width: 220px;
-    padding: 12px 0;
-    border: 2px solid;
-    border-radius: 10px;
-    background: transparent;
-    color: white;
-    border-color: #8a2be2;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
+#btnHost {
+  width: 220px;
+  padding: 12px 0;
+  border: 2px solid;
+  border-radius: var(--border-radius-big);
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-purple-500);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-#btnPlayer{
-    width: 220px;
-    padding: 12px 0;
-    border: 2px solid;
-    border-radius: 10px;
-    background: transparent;
-    color: white;
-    border-color: #ff7b00;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
+#btnPlayer {
+  width: 220px;
+  padding: 12px 0;
+  border: 2px solid;
+  border-radius: var(--border-radius-big);
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-orange-700);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
