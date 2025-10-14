@@ -35,6 +35,7 @@
 
   --color-purple-400: #c194ff;
   --color-purple-500: #a367ff;
+  --color-purple-600: #7c39e0;
 
   --color-neutral-100: #f7f7f7;
   --color-neutral-200: #ebebeb;
@@ -45,6 +46,8 @@
   --color-neutral-700: #5d5d5d;
   --color-neutral-800: #3f3f3f;
   --color-neutral-900: #343434;
+  --color-neutral-950: #2a2929;
+  --color-neutral-1000: #201e1e;
 
   --color-black: #000000;
   --color-white: #ffffff;
@@ -56,7 +59,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background: var(--color-neutral-900);
+  background: var(--color-neutral-1000);
   color: var(--color-white);
 }
 
@@ -81,7 +84,7 @@ body {
   border: 2px solid;
   border-radius: var(--border-radius-big);
   background: transparent;
-  color: var(--branco);
+  color: var(--color-white);
   border-color: var(--color-purple-500);
   font-size: 1rem;
   cursor: pointer;
@@ -94,7 +97,7 @@ body {
   border: 2px solid;
   border-radius: var(--border-radius-big);
   background: transparent;
-  color: var(--branco);
+  color: var(--color-neutral-100);
   border-color: var(--color-orange-700);
   font-size: 1rem;
   cursor: pointer;
@@ -111,7 +114,7 @@ body a {
   align-items: center;
   justify-content: center;
   margin: 30px 10%;
-  color: var(--border-color);
+  color: var(--color-neutral-500);
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -119,7 +122,7 @@ body a {
 }
 
 #voltar:hover {
-  color: var(--color);
+  color: var(--color-neutral-300);
   transition: 0.5s;
 }
 
@@ -129,11 +132,11 @@ body a {
 }
 
 #title h3 {
-  color: var(--branco);
+  color: var(--color-neutral-100);
 }
 
 #title h4 {
-  color: var(--border-color);
+  color: var(--color-neutral-500);
 }
 
 #game {
@@ -143,12 +146,12 @@ body a {
 }
 
 .content {
-  border: 2px solid var(--border-color);
-  background-color: var(--conteudo-color);
+  border: 2px solid var(--color-neutral-600);
+  background-color: var(--color-neutral-950);
 }
 
 #left {
-  border-radius: 10px;
+  border-radius: var(--border-radius-medium);
   width: 48%;
   height: 70%;
   margin-right: 20px;
@@ -156,13 +159,13 @@ body a {
 
 #left h3 {
   margin-left: 20px;
-  color: var(--color);
+  color: var(--color-neutral-200);
 }
 
 #right h3,
 h4 {
   margin-left: 20px;
-  color: var(--color);
+  color: var(--color-neutral-200);
 }
 
 #right {
@@ -171,7 +174,7 @@ h4 {
 }
 
 #atual {
-  border-radius: 10px;
+  border-radius: var(--border-radius-medium);
   height: 70%;
   margin-bottom: 20px;
 }
@@ -187,8 +190,8 @@ h4 {
   justify-content: center;
   font-size: 40px;
   font-weight: bolder;
-  color: var(--laranja);
-  background-color: var(--border-color);
+  color: var(--color-orange-700);
+  background-color: var(--color-neutral-800);
 }
 
 #sortear {
@@ -196,20 +199,21 @@ h4 {
   display: block;
   width: 90%;
   height: 50px;
-  border: 2px solid var(--laranja);
-  border-radius: 10px;
-  background-color: var(--border-color);
-  color: var(--color);
+  border: 2px solid var(--color-orange-700);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-neutral-800);
+  color: var(--color-neutral-200);
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 #sortear:hover {
-  background-color: var(--roxo);
-  transition: 0.3s;
+  background-color: var(--color-purple-600);
+  scale: 1.05;
+  transition: 0.2s;
 }
 
 #ultimos {
-  border-radius: 10px;
+  border-radius: var(--border-radius-medium);
   height: 25%;
 }
