@@ -21,27 +21,49 @@
 
   Isso ajuda a manter o código mais limpo, consistente e fácil de escalar.
 */
-:root{
-  font-family: "Poppins", sans-serif;
-  --bg-color: #1a1a1a;
-  --color:#ccc;
-  --conteudo-color:#2a2929 ;;
-  --border-color:#4b4b4f;
-  --roxo:#8a2be2;
-  --branco:#fafafa;
-  --laranja:#ff7b00;
+
+:root {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --color-orange-400: #ffb25e;
+  --color-orange-500: #ff9a3e;
+  --color-orange-600: #f47c1b;
+  --color-orange-700: #d35d0e;
+
+  --color-purple-400: #c194ff;
+  --color-purple-500: #a367ff;
+
+  --color-neutral-100: #f7f7f7;
+  --color-neutral-200: #ebebeb;
+  --color-neutral-300: #dedede;
+  --color-neutral-400: #b4b4b4;
+  --color-neutral-500: #8e8e8e;
+  --color-neutral-600: #6f6f6f;
+  --color-neutral-700: #5d5d5d;
+  --color-neutral-800: #3f3f3f;
+  --color-neutral-900: #343434;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --border-radius-big: 0.875rem; /* 14px */
+  --border-radius-medium: 0.625rem; /* 10px */
 }
+
 body {
   margin: 0;
   height: 100vh;
-  background: var(--bg-color);
-  color: var(--color);
+  background: var(--color-neutral-900);
+  color: var(--color-white);
 }
 
 .centralize {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -53,103 +75,112 @@ body {
   gap: 15px;
 }
 
-
-#btnHost{
-    width: 220px;
-    padding: 12px 0;
-    border: 2px solid;
-    border-radius: 10px;
-    background: transparent;
-    color: var(--branco);
-    border-color: var(--roxo);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
+#btnHost {
+  width: 220px;
+  padding: 12px 0;
+  border: 2px solid;
+  border-radius: var(--border-radius-big);
+  background: transparent;
+  color: var(--branco);
+  border-color: var(--color-purple-500);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-#btnPlayer{
-    width: 220px;
-    padding: 12px 0;
-    border: 2px solid;
-    border-radius: 10px;
-    background: transparent;
-    color: var(--branco);
-    border-color: var(--laranja);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
+#btnPlayer {
+  width: 220px;
+  padding: 12px 0;
+  border: 2px solid;
+  border-radius: var(--border-radius-big);
+  background: transparent;
+  color: var(--branco);
+  border-color: var(--color-orange-700);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-body a{
+body a {
   text-decoration: none;
 }
 
-#voltar{
+#voltar {
   font-weight: bolder;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30PX 10%;
-  color:var(--border-color);
+  margin: 30px 10%;
+  color: var(--border-color);
   background-color: transparent;
   border: none;
   cursor: pointer;
   transition: 0.5s;
-  
 }
-#voltar:hover{
-  color:var(--color);
+
+#voltar:hover {
+  color: var(--color);
   transition: 0.5s;
 }
-#title{
+
+#title {
   margin: 40px;
-  text-align: center; 
+  text-align: center;
 }
-#title h3{
-  color: var(--branco)
+
+#title h3 {
+  color: var(--branco);
 }
-#title h4{
-  color: var(--border-color)
+
+#title h4 {
+  color: var(--border-color);
 }
-#game{
+
+#game {
   margin: 24px 10%;
   height: 90vh;
   display: flex;
 }
-.content{
+
+.content {
   border: 2px solid var(--border-color);
   background-color: var(--conteudo-color);
 }
-#left{
+
+#left {
   border-radius: 10px;
   width: 48%;
   height: 70%;
   margin-right: 20px;
-
 }
-#left h3{
+
+#left h3 {
   margin-left: 20px;
   color: var(--color);
 }
-#right h3, h4{
+
+#right h3,
+h4 {
   margin-left: 20px;
   color: var(--color);
 }
-#right{
 
+#right {
   width: 45%;
   height: 70%;
 }
-#atual{
+
+#atual {
   border-radius: 10px;
   height: 70%;
   margin-bottom: 20px;
 }
-#bola{
+
+#bola {
   margin: 0 auto;
   width: 180px;
   height: 180px;
-  border: 3px solid var(--laranja);
+  border: 3px solid var(--color-orange-700);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -159,7 +190,8 @@ body a{
   color: var(--laranja);
   background-color: var(--border-color);
 }
-#sortear{
+
+#sortear {
   margin: 10px auto;
   display: block;
   width: 90%;
@@ -171,11 +203,13 @@ body a{
   cursor: pointer;
   transition: 0.3s;
 }
-#sortear:hover{
-  background-color: var(--roxo);  
+
+#sortear:hover {
+  background-color: var(--roxo);
   transition: 0.3s;
 }
-#ultimos{
+
+#ultimos {
   border-radius: 10px;
   height: 25%;
 }
