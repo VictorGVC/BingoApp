@@ -4,5 +4,5 @@ document.getElementById("btnHost").addEventListener("click", function(){
 })
 
 document.getElementById("btnPlayer").addEventListener("click", function(){
-    window.location.href = "./src/pages/player.html"
+    window.location.href = "./src/pages/player/player.html"
 })
