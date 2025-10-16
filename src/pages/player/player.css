@@ -1,91 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(10, 10, 10);
+}
 
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background-color: rgb(10, 10, 10);
-    }
+.box {
+  width: 510px;
+  height: 610px;
+  background-color: rgb(30, 30, 30);
+  border-color: aliceblue;
+}
 
-        .box {
-            width: 510px;
-            height: 610px;
-            background-color: rgb(30, 30, 30);
-            border-color: aliceblue;
-        }
+.letter-box,
+.pumpkin-box {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 10px;
+  width: 90px;
+  height: 90px;
+  background-color: rgb(102, 0, 255);
+  position: relative;
+}
 
-        .letter-box, .pumpkin-box{
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: row wrap;
-            margin-top: 10px;
-            width: 90px;
-            height: 90px;
-            background-color: rgb(102, 0, 255);
-            position: relative;
-        }
+.pumpkin-box img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 1;
+}
 
-        .pumpkin-box img{
-            width: 80px;
-            height: 80px;
-            position: absolute;
-            z-index: 1;
-        }
+.pumpkin-box span {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-        .pumpkin-box span{
-            position: absolute;
-            z-index: 2;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
+.num-box,
+.indian-box {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 90px;
+  height: 90px;
+  background-color: rgb(255, 128, 0);
+}
 
-        .num-box, .indian-box{
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: row wrap;
-             width: 90px;
-            height: 90px;
-            background-color: rgb(255, 128, 0);
-        }
+.indian-box img {
+  width: 60px;
+  height: 60px;
+}
 
-        .indian-box img{
-        
-            width: 60px;
-            height: 60px;
-        }
+.container-num-boxes {
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
 
-        .container-num-boxes{
-            
-            margin-left: 10px;
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
+.container-boxes {
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+}
 
-        .container-boxes{
-            margin-left: 10px;
-            display: flex;
-            gap: 10px;
-        }
+.num-box.marked {
+  position: relative;
+}
 
-        .num-box.marked{
-
-            position: relative;
-        }
-
-        .num-box.marked::after{
-            content: "O";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 40px;
-            color: rgb(102, 0, 255);
-        }
-
+.num-box.marked::after {
+  content: "O";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: rgb(102, 0, 255);
+}
