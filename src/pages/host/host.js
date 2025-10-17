@@ -17,6 +17,52 @@ const sortearBtn = document.getElementById('sortear');
 const leftDiv = document.getElementById('left');
 const remainingH4 = document.querySelector('#title h4');
 
+// Função para salvar o estado no localStorage
+function saveGameState() {
+  localStorage.setItem('ballsAvailable', JSON.stringify(balls));
+  localStorage.setItem('drawnOrder', JSON.stringify(drawnOrder));
+}
+
+function restart(){
+  if (confirm('Resetar Partida?')){
+
+    localStorage.removeItem('ballsAvailable');
+    localStorage.removeItem('drawnOrder');
+    location.reload()
+  }
+  
+}
+
+// Função para carregar o estado do localStorage
+function loadGameState() {
+  const savedBalls = localStorage.getItem('ballsAvailable');
+  const savedDrawnOrder = localStorage.getItem('drawnOrder');
+
+  if (savedBalls) {
+    // Carrega as bolas disponíveis
+    Object.keys(balls).forEach(col => {
+      balls[col] = JSON.parse(savedBalls)[col];
+    });
+  }
+
+  if (savedDrawnOrder) {
+    // Carrega as bolas já sorteadas
+    drawnOrder.push(...JSON.parse(savedDrawnOrder));
+
+    // Reconstruir columnsDrawn com base no histórico salvo
+    drawnOrder.forEach(({col, num}) => {
+      columnsDrawn[col].push(num);
+    });
+
+    // Atualizar tela logo ao carregar
+    updateCard();
+    updateHistory();
+    updateRemaining();
+  } else {
+    updateRemaining(); // Mesmo sem histórico, já mostrar "75 números restantes"
+  }
+}
+
 // remover bola do total
 function drawRandom(arr) {
   const index = Math.floor(Math.random() * arr.length);
@@ -34,20 +80,35 @@ function drawBall() {
   columnsDrawn[col].push(num);
   drawnOrder.push({col, num});
 
+  // Salva o estado após cada sorteio
+  saveGameState();
+
   return {col, num};
 }
 
 // Atualiza a cartela  (colunas independentes)
 function updateCard() {
+  // Ordenar os números antes de renderizar
+  Object.keys(columnsDrawn).forEach(col => {
+    columnsDrawn[col].sort((a, b) => a - b);
+  });
+
   leftDiv.innerHTML = '<h3><b>Números já Sorteados</b></h3>';
   const header = ['B','I','N','G','O'];
   const tableDiv = document.createElement('div');
   tableDiv.style.display = 'flex';
-  tableDiv.style.gap = '10px';
-
+  tableDiv.style.lineHeight = '22px'
+  tableDiv.style.backgroundColor = 'var(--color-neutral-800)'
+  tableDiv.style.justifyItems = 'center'
+  tableDiv.style.width = '90%'
+  tableDiv.style.height = '85%'
+  tableDiv.style.borderRadius = 'var(--border-radius-big)'
 
   header.forEach(col => {
     const colDiv = document.createElement('div');
+    colDiv.style.lineHeight = '22px'
+    colDiv.style.width = '100px'
+    colDiv.style.color ='var(--color-orange-600)'
     colDiv.style.display = 'flex';
     colDiv.style.flexDirection = 'column';
     colDiv.style.alignItems = 'center';
@@ -58,24 +119,36 @@ function updateCard() {
     columnsDrawn[col].forEach(num => {
       const numDiv = document.createElement('div');
       numDiv.textContent = num;
+      numDiv.style.border = "1px solid var(--color-neutral-600)"
+      numDiv.style.borderRadius = 'var(--border-radius-medium)'
+      numDiv.style.width = '90px'
+      numDiv.style.blockSize = 'border-box'
+      numDiv.style.marginLeft = '9px'
+      numDiv.style.textAlign = "center"
+      numDiv.style.color = 'var(--color-purple-500)'
+      numDiv.style.backgroundColor ="var(--color-neutral-950)"
       colDiv.appendChild(numDiv);
     });
-
+    
     tableDiv.appendChild(colDiv);
   });
-
+  
   leftDiv.appendChild(tableDiv);
+  
 }
 
 // Atualiza histórico lateral
 function updateHistory() {
   ultimosDiv.innerHTML = '<h3><b>Últimos Sorteados</b></h3>';
-  Object.keys(columnsDrawn).forEach(col => {
-    if (columnsDrawn[col].length > 0) {
-      const p = document.createElement('p');
-      p.textContent = `${col}: ${columnsDrawn[col].join(', ')}`;
-      ultimosDiv.appendChild(p);
-    }
+
+  // Pega os últimos dois números sorteados do array drawnOrder
+  const lastTwoDrawn = drawnOrder.slice(-2).reverse();
+
+  // Itera sobre os últimos dois sorteios
+  lastTwoDrawn.forEach(drawn => {
+    const p = document.createElement('p');
+    p.textContent = `${drawn.col}: ${drawn.num}`;
+    ultimosDiv.appendChild(p);
   });
 }
 
@@ -88,10 +161,18 @@ function updateRemaining() {
 // Evento de clique no botão sortear
 sortearBtn.addEventListener('click', () => {
   const result = drawBall();
+
   if (!result) {
-    alert('Todas as 75 bolas já foram sorteadas!');
+    //  Quando acabar as bolas, limpar tudo e reiniciar automaticamente
+    if (confirm('Todas as bolas foram sorteadas!\nDeseja reiniciar o jogo?')) {
+      localStorage.removeItem('ballsAvailable');
+      localStorage.removeItem('drawnOrder');
+      location.reload(); // Recarrega a página
+    }
     return;
   }
+
+
 
   // Atualiza último número
   bolaDiv.textContent = `${result.col}-${result.num}`;
@@ -102,3 +183,5 @@ sortearBtn.addEventListener('click', () => {
   updateRemaining();
 });
 
+// Chame loadGameState ao carregar a página
+window.onload = loadGameState;

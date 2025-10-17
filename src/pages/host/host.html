@@ -7,23 +7,24 @@
     <title>Sorteio</title>
 </head>
 <body>
-    <a href="../../index.html">
+    <a href="../../../index.html">
 
-        <button id="voltar"><img src="../assets/back.svg">&nbsp;voltar</button>
+        <button id="voltar"><img src="../../assets/back.svg">&nbsp;voltar</button>
     </a>
         <div id="title">
-            <img src="" alt="Fantasma">
+            <img src="../../assets/" alt="Fantasma">
             <h3>Host - Halloween Bingo</h3>
             <h4>75 números restantes</h4>
     </div>
     <div id="game">
         <div id="left" class="content">
             <h3><b>Números já Sorteados</b></h3>
+            <div id="card"><p>B</p><p>I</p><p>N</p><p>G</p><p>O</p></div>
         </div>
         <div id="right">
             <div id="atual" class="content">
                 <h4>Bola Atual</h4>
-                <div id="bola">00</div>
+                <div id="bola"><img src="../../assets/" alt="Fantasma"></div>
                 <button id="sortear">Sortear Número</button>
             </div>
             <div id="ultimos" class="content">
@@ -31,6 +32,7 @@
             </div>
         </div>
     </div>
+    <button id="restart" onclick="restart()">Reiniciar partida</button>
     <script src="./host.js"></script>
 </body>
 </html>
