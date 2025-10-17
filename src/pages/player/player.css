@@ -86,3 +86,21 @@ body {
   font-size: 40px;
   color: rgb(102, 0, 255);
 }
+
+#resetButton {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin: 0;
+}
