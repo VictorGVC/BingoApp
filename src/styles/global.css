@@ -23,10 +23,10 @@
 */
 
 :root {
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+  /* --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    "Liberation Mono", "Courier New", monospace; */
 
   --color-orange-400: #ffb25e;
   --color-orange-500: #ff9a3e;
@@ -39,15 +39,15 @@
   --color-purple-600: #7c39e0;
   --color-purple-700: rgba(163, 103, 255, 0.3);
 
-  --color-neutral-100: #f7f7f7;
+  --color-neutral-100: #fafafa;
   --color-neutral-200: #ebebeb;
-  --color-neutral-300: #dedede;
-  --color-neutral-400: #b4b4b4;
-  --color-neutral-500: #8e8e8e;
-  --color-neutral-600: #6f6f6f;
-  --color-neutral-700: #5d5d5d;
-  --color-neutral-800: #3f3f3f;
-  --color-neutral-900: #343434;
+  --color-neutral-300: #dcdcdc;
+  --color-neutral-400: #a9a9a9;
+  --color-neutral-500: #7f7f7f;
+  --color-neutral-600: #5d5d5d;
+  --color-neutral-700: #4a4a4a;
+  --color-neutral-800: #303030;
+  --color-neutral-900: #414141;
   --color-neutral-950: #2a2929;
   --color-neutral-1000: #201e1e;
 
@@ -58,26 +58,41 @@
   --border-radius-medium: 0.625rem; /* 10px */
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: auto;
+}
+
 body {
   margin: 0;
-  height: 100vh;
-  background: var(--color-neutral-1000);
+  width: 100%;
+  background: var(--color-neutral-950);
   color: var(--color-white);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
-  min-width: 100vw;
 }
 
 .container {
-  min-height: 100vh;
+  height: 100vh;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
+
+.container.host {
+  height: auto;
+  padding: 0;
+}
+
 
 .container-icons {
   display: flex;
@@ -248,151 +263,4 @@ body {
     font-size: 0.875rem;
     padding: 0.75rem 1rem;
   }
-}
-
-#voltar {
-  font-weight: bolder;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 10%;
-  color: var(--color-neutral-500);
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-#voltar:hover {
-  color: var(--color-neutral-300);
-  transition: 0.5s;
-}
-
-#title {
-  margin: 40px;
-  text-align: center;
-}
-
-#title h3 {
-  color: var(--color-neutral-100);
-}
-
-#title h4 {
-  color: var(--color-neutral-500);
-}
-
-#game {
-  margin: 24px 10%;
-  height: 90vh;
-  display: flex;
-}
-
-.content {
-  border: 2px solid var(--color-neutral-600);
-  background-color: var(--color-neutral-950);
-}
-
-#left {
-  border-radius: var(--border-radius-medium);
-  width: 48%;
-  height: 70%;
-  margin-right: 20px;
-  display: block;
-  justify-items: center;
-}
-
-#left h3 {
-  margin-left: 20px;
-  color: var(--color-neutral-200);
-}
-
-#right h3,
-h4 {
-  margin-left: 20px;
-  color: var(--color-neutral-200);
-}
-
-#right {
-  width: 45%;
-  height: 70%;
-}
-
-#atual {
-  border-radius: var(--border-radius-medium);
-  height: 70%;
-  margin-bottom: 20px;
-}
-
-#bola {
-  margin: 0 auto;
-  width: 180px;
-  height: 180px;
-  border: 3px solid var(--color-orange-700);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: bolder;
-  color: var(--color-orange-700);
-  background-color: var(--color-neutral-800);
-}
-
-#sortear {
-  margin: 10px auto;
-  display: block;
-  width: 90%;
-  height: 50px;
-  border: 2px solid var(--color-orange-700);
-  border-radius: var(--border-radius-medium);
-  background-color: var(--color-neutral-800);
-  color: var(--color-neutral-200);
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-#sortear:hover {
-  background-color: var(--color-purple-600);
-  scale: 1.05;
-  transition: 0.2s;
-}
-
-#ultimos {
-  border-radius: var(--border-radius-medium);
-  height: 25%;
-}
-
-#ultimos h3 {
-}
-
-#ultimos p {
-  float: left;
-  border: 1px solid var(--color-neutral-600);
-  width: 200px;
-  margin: 0;
-  font-size: 3rem;
-  text-align: center;
-}
-
-#card {
-  width: 90%;
-  height: 85%;
-  border-radius: var(--border-radius-big);
-  background-color: var(--color-neutral-800);
-  display: flex;
-}
-
-#card p {
-  margin: 0;
-  line-height: 22px;
-  width: 100px;
-  color: var(--color-orange-600);
-  text-align: center;
-  font-weight: bold;
-}
-
-#restart {
-  position: fixed;
-  right: 0;
-  bottom: 0;
 }
