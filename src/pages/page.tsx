@@ -2,7 +2,7 @@ import './page.css';
 // pagina inicial que ira abrir ao iniciar a aplicação
 // neste caso a pagina de escolha de papel
 
-function App() {
+function Page() {
     return(
     <div>
         <h1>BingoApp!</h1>
@@ -11,4 +11,4 @@ function App() {
     )
 }
 
-export default App;
+export default Page;
