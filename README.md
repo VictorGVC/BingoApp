@@ -9,7 +9,7 @@ Siga os passos abaixo para rodar o projeto no seu computador:
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/usuario/BingoApp.git
+git clone https://github.com/VictorGVC/BingoApp.git
 cd BingoApp
 ```
 
