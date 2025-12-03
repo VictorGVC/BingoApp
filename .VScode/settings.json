@@ -1,0 +1,40 @@
+{
+  // ===== AUTO SAVE =====
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+
+  // ===== FORMATAÇÃO =====
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // ===== PRETTIER =====
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 4,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": true,
+  "prettier.printWidth": 100,
+
+  // ===== WORD WRAP =====
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 100,
+
+  // ===== IMPORTS REACT/TS =====
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+
+  // ===== ALIASES =====
+  "paths-intellisense.mappings": {
+    "@": "${workspaceFolder}/src",
+    "@components": "${workspaceFolder}/src/components",
+    "@features": "${workspaceFolder}/src/features",
+    "@hooks": "${workspaceFolder}/src/hooks",
+    "@services": "${workspaceFolder}/src/services",
+    "@utils": "${workspaceFolder}/src/utils"
+  },
+
+  // ===== ARQUIVOS =====
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true
+}
