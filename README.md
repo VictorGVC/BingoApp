@@ -14,4 +14,5 @@ Na barra de busca, digite:
 ```bash
     @recommended
 ```
+
 Instale todas as extensões recomendadas para o projeto.
