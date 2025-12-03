@@ -2,17 +2,34 @@
 
 ## Como Utilizar
 
-Após clonar o repositório, instale o TypeScript via terminal:
+Siga os passos abaixo para rodar o projeto no seu computador:
+
+---
+
+### 1. Clonar o repositório
 
 ```bash
-    npm install typescript
+git clone https://github.com/usuario/BingoApp.git
+cd BingoApp
 ```
 
-Em seguida, abra o Visual Studio Code e acesse a aba de extensões.
-Na barra de busca, digite:
+### 2. Instalar dependências
+
 
 ```bash
-    @recommended
+    npm install
 ```
 
-Instale todas as extensões recomendadas para o projeto.
+### 3. Abrir no Visual Studio Code
+
+- Abra a pasta do projeto no VSCode.
+- Vá até a aba de extensões e instale todas as extensões recomendadas (@recommended).
+
+### 4. Rodar o projeto no navegador
+
+```bash
+    npm start
+```
+- O navegador abrirá automaticamente em http://localhost:5173. (ou clique no local: que aparecer no terminal)
+- Qualquer alteração no código será recarregada automaticamente.
+
