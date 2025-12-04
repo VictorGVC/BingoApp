@@ -1,0 +1,1 @@
+features/: Esta pasta é ótima para organizar componentes e lógica específicos de funcionalidades, como “Auth” (autenticação) e “Dashboard” (painel de usuário). Cada funcionalidade tem seus próprios componentes, lógica de estado (como authSlice.js para Redux) e até mesmo estilos e testes próprios.

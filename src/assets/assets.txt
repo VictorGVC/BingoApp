@@ -1,0 +1,1 @@
+assets/: Armazena imagens, ícones e outros arquivos estáticos. Ideal para manter esses arquivos organizados fora do código principal.

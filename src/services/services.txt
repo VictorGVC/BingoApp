@@ -1,0 +1,1 @@
+services/: Centraliza as funções que lidam com chamadas de APIs ou serviços externos. Arquivos como api.js e authService.js mantêm o código de integração com serviços separados da lógica dos componentes.

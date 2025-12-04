@@ -1,0 +1,1 @@
+context/: Essa pasta guarda os contextos criados com a Context API do React, úteis para gerenciar estados globais que precisam ser compartilhados entre diferentes componentes. No exemplo, temos o AuthContext.js para autenticação.

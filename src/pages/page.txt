@@ -1,0 +1,1 @@
+pages/: Contém as páginas principais do aplicativo, como a Home e o Profile. Em frameworks como o Next.js, essa pasta é usada para roteamento automático.

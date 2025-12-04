@@ -1,0 +1,1 @@
+hooks/: Os hooks personalizados ficam aqui, permitindo o compartilhamento de lógica entre diferentes componentes. Hooks como useAuth.js (para lógica de autenticação) e useFetch.js (para chamadas API) são comuns.

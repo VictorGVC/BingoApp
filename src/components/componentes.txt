@@ -1,0 +1,1 @@
+components/: Aqui ficam os componentes reutilizáveis e independentes, como botões, modais e outros elementos da interface que podem ser utilizados em várias partes do projeto. Cada componente possui sua própria pasta, incluindo arquivo principal, testes (.test.js) e estilos (.css).

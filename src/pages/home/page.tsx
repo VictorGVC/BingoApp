@@ -3,8 +3,10 @@ import './page.css'
 function Home() {
     return(
     <div>
-    
-        <h1>paginas</h1>
+
+        <h1>Home</h1>
+        <a href="/host">Host</a>
+        <a href="/player">Player</a>
 
     </div>
     )

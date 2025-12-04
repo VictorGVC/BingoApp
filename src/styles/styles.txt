@@ -1,0 +1,1 @@
+styles/: Para estilos globais da aplicação, como variáveis de CSS ou temas. Inclui arquivos como variables.css e main.css, que afetam toda a aplicação.

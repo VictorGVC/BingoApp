@@ -1,0 +1,1 @@
+utils/: Guarda funções auxiliares e utilitários, como formatDate.js para formatação de datas e slugify.js para transformar textos em slugs. Essas funções são reutilizáveis e independentes dos componentes.

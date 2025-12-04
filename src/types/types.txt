@@ -1,0 +1,4 @@
+types/: de uma aplicação React, só é utilizado quando estamos trabalhando com TypeScript, visto que lá iremos criar os tipos de cada objeto e, também, interfaces
+
+Note que aqui, também, podemos organizar cada tipo em outros diretórios.
+
