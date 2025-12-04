@@ -29,8 +29,13 @@ cd BingoApp
 
 ### 4. Rodar o projeto no navegador
 
+Digite um dos seguintes comandos eu seu terminal.
+
 ```bash
     npm start
+```
+```bash
+    npm run dev
 ```
 
 - O navegador abrirá automaticamente em http://localhost:5173. (ou clique no local: que aparecer no terminal)
