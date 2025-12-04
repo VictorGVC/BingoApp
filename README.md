@@ -15,6 +15,8 @@ cd BingoApp
 
 ### 2. Instalar dependências
 
+* Baixar e instalar o [Node.js](https://nodejs.org/en/download)
+* Instalar o packge maneger atraves do terminal com o comando a baixo
 
 ```bash
     npm install
@@ -30,6 +32,6 @@ cd BingoApp
 ```bash
     npm start
 ```
+
 - O navegador abrirá automaticamente em http://localhost:5173. (ou clique no local: que aparecer no terminal)
 - Qualquer alteração no código será recarregada automaticamente.
-
