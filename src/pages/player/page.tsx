@@ -1,4 +1,4 @@
-import './page.css'
+import styles from './page.module.css'
 
 const Player = () => {
     return(
