@@ -1,6 +1,6 @@
 import './page.css'
 
-function Player() {
+const Player = () => {
     return(
     <div>
 
