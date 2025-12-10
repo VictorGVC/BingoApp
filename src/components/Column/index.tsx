@@ -3,11 +3,11 @@ import styles from './column.module.css'
 
 interface ColumnProps {
     Header: string
-    Slot1: Number
-    Slot2: Number   
-    Slot3: Number   
-    Slot4: Number   
-    Slot5: Number   
+    Slot1: number
+    Slot2: number
+    Slot3: number
+    Slot4: number
+    Slot5: number
 
 }
 
