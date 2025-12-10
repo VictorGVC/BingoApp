@@ -1,14 +1,20 @@
 import styles from './page.module.css'
+import './page.module.css'
+import { Box, Checkbox, Container, Grid, Typography } from '@mui/material'
 
 const Player = () => {
     return(
-    <div>
+    <Container className={styles.content}>
+        <Typography  className={styles.title} sx={{fontSize:'var(--size-big)'}}>Bingo App</Typography>
+        <Container maxWidth='md' className={styles.table}>
+            <Grid container spacing={1}>
+               
 
-        <h1>Player</h1>
-        <a href="/">Home</a>
-        <a href="/host">Host</a>
 
-    </div>
+
+            </Grid>
+        </Container>
+    </Container>
     )
 }
 
