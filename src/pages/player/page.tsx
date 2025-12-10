@@ -9,11 +9,11 @@ const Player = () => {
         <Typography  className={styles.title} sx={{fontSize:'var(--size-big)'}}>Bingo App</Typography>
         <Container maxWidth='md' className={styles.table}>
             <Stack className={styles.columns} sx={{flexDirection:'row'}}>
-                <Column Header='B' Slot1='1' Slot2='2' Slot3='3' Slot4='4' Slot5='5' />
-                <Column Header='I' Slot1='1' Slot2='2' Slot3='3' Slot4='4' Slot5='5'/>
-                <Column Header='N' Slot1='1' Slot2='2' Slot3='3' Slot4='4' Slot5='5' />
-                <Column Header='G' Slot1='1' Slot2='2' Slot3='3' Slot4='4' Slot5='5'/>
-                <Column Header='O' Slot1='1' Slot2='2' Slot3='3' Slot4='4' Slot5='5'/>
+                <Column Header='B' Slot1={1} Slot2={2} Slot3={3} Slot4={4} Slot5={5} />
+                <Column Header='I' Slot1={1} Slot2={2} Slot3={3} Slot4={4} Slot5={5}/>
+                <Column Header='N' Slot1={1} Slot2={2} Slot3={3} Slot4={4} Slot5={5} />
+                <Column Header='G' Slot1={1} Slot2={2} Slot3={3} Slot4={4} Slot5={5}/>
+                <Column Header='O' Slot1={1} Slot2={2} Slot3={3} Slot4={4} Slot5={5}/>
 
 
 
