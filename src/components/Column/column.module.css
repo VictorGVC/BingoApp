@@ -1,0 +1,35 @@
+.column{
+    min-width: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+
+    height: 650px;
+}
+.header{
+    margin-top: 10px;
+    background:var(--color-primary) ;
+    color: var(--color-grey-100);
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-big);
+    font-size: var(--size-big);
+}
+
+.slot{
+     background: transparent ;
+     border: 2px solid var(--color-primary);
+    color: var(--color-grey-100);
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-big);
+    font-size: var(--size-big);
+
+}

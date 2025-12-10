@@ -6,7 +6,7 @@
     justify-self: center;
     border: 2px solid var(--color-primary);
     border-radius: var(--border-radius-medium);
-    height: 600px;
+    height: 650px;
 }
 
 .title{
@@ -14,3 +14,4 @@
     color: var(--color-secondary);
     font-size: var(--font-size-big);
 }
+
