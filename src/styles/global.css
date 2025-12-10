@@ -1,0 +1,32 @@
+:root {
+    --bg-color-primary: #2a2929 ;
+    --bg-color-secondary: #303030;
+    --color-primary: #496fc9;
+    --color-secondary: #c94d49 ;
+    --border-radius-small: 0.375 ; /* 6px */
+    --border-radius-medium: 0.625rem; /* 10px */
+    --border-radius-big: 0.875rem; /* 14px */
+
+    --color-black: #000000;
+    --color-white: #ffffff;
+
+    --color-grey-1000: #201e1e;
+    --color-grey-900: #2a2929;
+    --color-grey-800: #414141;
+    --color-grey-700: #303030;
+    --color-grey-600: #4a4a4a;
+    --color-grey-500: #5d5d5d;
+    --color-grey-400: #7f7f7f;
+    --color-grey-300: #a9a9a9;
+    --color-grey-200: #dcdcdc;
+    --color-grey-100: #ebebeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: auto;
+}
