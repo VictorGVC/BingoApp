@@ -32,6 +32,7 @@ label{
     border-radius: var(--border-radius-big);
     font-size: var(--size-big);
     transition: 0.2s;
+    cursor: pointer;
 }
 label:hover{
     background-color: var(--color-primary);
