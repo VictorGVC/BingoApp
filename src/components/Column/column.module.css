@@ -47,3 +47,7 @@ input[type='checkbox']{
     display: none;
 
 }
+
+.dice{
+    scale:3;
+}
