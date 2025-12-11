@@ -21,10 +21,10 @@
     --color-grey-200: #dcdcdc;
     --color-grey-100: #ebebeb;
 
-    --size-small: 0.85rem;
-    --size-default: 1rem;
-    --size-medium: 1.5rem;
-    --size-big: 3rem;
+    --size-small: 0.85em;
+    --size-default: 1em;
+    --size-medium: 1.5em;
+    --size-big: 3em;
 }
 
 * {
@@ -41,3 +41,16 @@ body {
     background-color: var(--bg-color-primary);
     color: var(--color-grey-100);
 }
+
+@media (max-width: 768px) {
+
+:root{
+    --size-small: 0.55em;
+    --size-default: 0.75em;
+    --size-medium: 1em;
+    --size-big: 2em;
+
+}
+
+}
+

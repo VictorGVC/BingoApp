@@ -13,15 +13,27 @@ interface ColumnProps {
 
 export const Column = ({Header,Slot1,Slot2,Slot3,Slot4,Slot5}: ColumnProps) =>{
 
+    const id1 = `_${Slot1}`
+    const id2 = `_${Slot2}`
+    const id3 = `_${Slot3}`
+    const id4 = `_${Slot4}`
+    const id5 = `_${Slot5}`
+
     return(
         <Stack className={styles.column}>
-            <Box className={styles.header} >{Header}</Box>
-            <Box className={styles.slot}>{Slot1}</Box>
-            <Box className={styles.slot}>{Slot2}</Box>
-            <Box className={styles.slot}>{Slot3}</Box>
-            <Box className={styles.slot}>{Slot4}</Box>
-            <Box className={styles.slot}>{Slot5}</Box>
+            <Box className={styles.header}>{Header}</Box>
+            <label htmlFor={id1}><Box className={styles.slot}>{Slot1}<input type='checkbox' id={id1} /> </Box></label>
+            <label htmlFor={id2}><Box className={styles.slot}>{Slot2}<input type='checkbox' id={id2} /> </Box></label>
+            <label htmlFor={id3}><Box className={styles.slot}>{Slot3}<input type='checkbox' id={id3} /> </Box></label>
+            <label htmlFor={id4}><Box className={styles.slot}>{Slot4}<input type='checkbox' id={id4} /> </Box></label>
+            <label htmlFor={id5}><Box className={styles.slot}>{Slot5}<input type='checkbox' id={id5} /> </Box></label>
+
         </Stack>
 
     );
 };
+
+
+
+
+

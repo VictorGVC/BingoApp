@@ -5,7 +5,7 @@
     align-items: center;
     gap: 10px;
 
-    height: 85vh;
+    height: 80vh;
 }
 .header {
     margin-top: 10px;
@@ -20,7 +20,7 @@
     font-size: var(--size-big);
 }
 
-.slot {
+label{
     background: transparent;
     border: 2px solid var(--color-primary);
     color: var(--color-grey-100);
@@ -31,4 +31,19 @@
     align-items: center;
     border-radius: var(--border-radius-big);
     font-size: var(--size-big);
+    transition: 0.2s;
+}
+label:hover{
+    background-color: var(--color-primary);
+    transition: 0.2s;
+}
+
+label:has(input[type='checkbox']:checked){
+    background-color: var(--color-secondary);
+    transition: 0.2s;
+
+}
+input[type='checkbox']{
+    display: none;
+
 }
