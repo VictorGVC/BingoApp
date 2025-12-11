@@ -59,6 +59,21 @@ input[type='checkbox']{
     stroke-width: 0.2;
 
 }
+@media (max-width: 768px) {
+    .dice{
+        scale:2.5;
+    }
+}
+@media (max-width: 500px) {
+    .dice{
+        scale:2;
+    }
+}
+@media (max-width: 450px) {
+    .dice{
+        scale:1.3;
+    }
+}
 
 @keyframes diceRotation {
     0%{
