@@ -50,4 +50,23 @@ input[type='checkbox']{
 
 .dice{
     scale:3;
+    animation-name: diceRotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color:var(--color-primary);
+    stroke: var(--color-black);
+    stroke-width: 0.2;
+
+}
+
+@keyframes diceRotation {
+    0%{
+        rotate: 0deg;
+
+    }
+    100%{
+        rotate: 360deg
+
+    }
 }

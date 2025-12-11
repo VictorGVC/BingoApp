@@ -22,7 +22,7 @@ export const NColumn = ({Slot1,Slot2,Slot4,Slot5}: ColumnProps) =>{
             <Box className={styles.header}>N</Box>
             <label htmlFor={id1}><Box className={styles.slot}>{Slot1}<input type='checkbox' id={id1} /> </Box></label>
             <label htmlFor={id2}><Box className={styles.slot}>{Slot2}<input type='checkbox' id={id2} /> </Box></label>
-            <label htmlFor='N'><Box className={styles.slot}><CasinoOutlinedIcon className={styles.dice} /><input type='checkbox' id='N' /></Box></label>
+            <label htmlFor='N'><Box className={styles.slot}><CasinoOutlinedIcon className={styles.dice} /><input type='checkbox' id='N' checked/></Box></label>
             <label htmlFor={id4}><Box className={styles.slot}>{Slot4}<input type='checkbox' id={id4} /> </Box></label>
             <label htmlFor={id5}><Box className={styles.slot}>{Slot5}<input type='checkbox' id={id5} /> </Box></label>
 
