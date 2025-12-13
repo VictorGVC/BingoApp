@@ -26,5 +26,5 @@ jobs:
 
       - name: Deploy
         run: |
-    DEPLOY_URL=$(vercel deploy --prebuild --prod --token=${{ secrets.VERCEL_TOKEN }})
+    DEPLOY_URL=$(vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }})
     echo "Deployment URL: $DEPLOY_URL"
