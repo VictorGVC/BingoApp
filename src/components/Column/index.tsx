@@ -13,11 +13,12 @@ export const Column = ({Header,Numbers}: ColumnProps) =>{
     return(
         <Stack className={styles.column}>
             <Box className={styles.header}>{Header}</Box>
-            <Slot />
-            <Slot />
-            <Slot />
-            <Slot />
-            <Slot />
+            <Slot number={Numbers[0]} />
+            <Slot number={Numbers[1]} />
+            <Slot number={Numbers[2]} />
+            <Slot number={Numbers[3]} />
+            <Slot number={Numbers[4]} />
+
         </Stack>
 
     );
