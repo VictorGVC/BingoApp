@@ -13,7 +13,7 @@ const Player = () => {
             <Stack className={styles.columns} sx={{flexDirection:'row'}}>
                 <Column Header='B' Numbers={[1,2,3,4,5]} />
                 <Column Header='I' Numbers={[11,12,13,14,15]} />
-                <Column Header='N' Numbers={[21,22,23,24,25]} />
+                <Column Header='N' Numbers={[21,22,24,25]} />
                 <Column Header='G' Numbers={[31,32,33,34,35]} />
                 <Column Header='O' Numbers={[41,42,43,44,45]} />
 

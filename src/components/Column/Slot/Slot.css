@@ -29,7 +29,7 @@ input[type='checkbox']{
 
 .dice{
     scale:3;
-    animation-name: diceRotation;
+    animation-name: Rotation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -54,7 +54,7 @@ input[type='checkbox']{
     }
 }
 
-@keyframes diceRotation {
+@keyframes Rotation {
     0%{
         rotate: 0deg;
 
