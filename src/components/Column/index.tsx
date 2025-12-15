@@ -1,33 +1,23 @@
-import {Checkbox, Stack, Card, Box, Typography} from '@mui/material'
+import {Stack, Box} from '@mui/material'
+import {Slot} from './Slot'
 import styles from './column.module.css'
 
 interface ColumnProps {
     Header: string
-    Slot1: number
-    Slot2: number
-    Slot3: number
-    Slot4: number
-    Slot5: number
+    Numbers : Array<number>
 
 }
 
-export const Column = ({Header,Slot1,Slot2,Slot3,Slot4,Slot5}: ColumnProps) =>{
-
-    const id1 = `_${Slot1}`
-    const id2 = `_${Slot2}`
-    const id3 = `_${Slot3}`
-    const id4 = `_${Slot4}`
-    const id5 = `_${Slot5}`
+export const Column = ({Header,Numbers}: ColumnProps) =>{
 
     return(
         <Stack className={styles.column}>
             <Box className={styles.header}>{Header}</Box>
-            <label htmlFor={id1}><Box className={styles.slot}>{Slot1}<input type='checkbox' id={id1} /> </Box></label>
-            <label htmlFor={id2}><Box className={styles.slot}>{Slot2}<input type='checkbox' id={id2} /> </Box></label>
-            <label htmlFor={id3}><Box className={styles.slot}>{Slot3}<input type='checkbox' id={id3} /></Box></label>
-            <label htmlFor={id4}><Box className={styles.slot}>{Slot4}<input type='checkbox' id={id4} /> </Box></label>
-            <label htmlFor={id5}><Box className={styles.slot}>{Slot5}<input type='checkbox' id={id5} /> </Box></label>
-
+            <Slot />
+            <Slot />
+            <Slot />
+            <Slot />
+            <Slot />
         </Stack>
 
     );
