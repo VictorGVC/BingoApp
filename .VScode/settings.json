@@ -43,6 +43,7 @@
         "esbenp",
         "kohler",
         "oderwat",
+        "vercel",
         "yoavbls"
     ],
 
@@ -58,5 +59,5 @@
     "files.trimTrailingWhitespace": true,
 
     // ===== EDITOR =====
-    "editor.tabSize": 4,
+    "editor.tabSize": 4
 }
