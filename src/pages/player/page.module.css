@@ -1,24 +1,21 @@
-.content{
+.content {
     height: 100vh;
-
 }
-.table{
+.table {
     justify-self: center;
     border: 2px solid var(--color-primary);
     border-radius: var(--border-radius-medium);
     display: flex;
     flex-direction: column;
-    padding-bottom:var(--size-small);
-    background-color:var(--bg-color-secondary);
+    padding-bottom: var(--size-small);
+    background-color: var(--bg-color-secondary);
 }
 
-.title{
+.title {
     text-align: center;
     color: var(--color-secondary);
     font-size: var(--font-size-big);
 }
-.columns{
+.columns {
     padding-bottom: var(--size-small);
 }
-
-

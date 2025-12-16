@@ -1,4 +1,4 @@
-label{
+label {
     background: transparent;
     border: 2px solid var(--color-primary);
     color: var(--color-grey-100);
@@ -12,55 +12,47 @@ label{
     transition: 0.2s;
     cursor: pointer;
 }
-label:hover{
+label:hover {
     background-color: var(--color-primary);
     transition: 0.2s;
 }
-
-label:has(input[type='checkbox']:checked){
+label:has(input[type='checkbox']:checked) {
     background-color: var(--color-secondary);
     transition: 0.2s;
-
 }
-input[type='checkbox']{
+input[type='checkbox'] {
     display: none;
-
 }
-
-.dice{
-    scale:3;
+.icon {
+    scale: 3;
     animation-name: Rotation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    color:var(--color-primary);
+    color: var(--color-primary);
     stroke: var(--color-black);
     stroke-width: 0.2;
-
 }
 @media (max-width: 768px) {
-    .dice{
-        scale:2.5;
+    .icon {
+        scale: 2.5;
     }
 }
 @media (max-width: 500px) {
-    .dice{
-        scale:2;
+    .icon {
+        scale: 2;
     }
 }
 @media (max-width: 450px) {
-    .dice{
-        scale:1.3;
+    .icon {
+        scale: 1.3;
     }
 }
-
 @keyframes Rotation {
-    0%{
+    0% {
         rotate: 0deg;
-
     }
-    100%{
-        rotate: 360deg
-
+    100% {
+        rotate: 360deg;
     }
 }
