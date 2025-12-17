@@ -37,13 +37,14 @@
     "cSpell.language": "pt,pt-BR,en",
     "cSpell.enableFiletypes": ["markdown", "json", "typescript", "javascript"],
     "cSpell.words": [
-        "esbenp",
-        "oderwat",
-        "kohler",
-        "yoavbls",
+        "brazilian",
         "CODESPELLING",
         "dbaeumer",
-        "brazilian"
+        "esbenp",
+        "kohler",
+        "oderwat",
+        "vercel",
+        "yoavbls"
     ],
 
     // ===== ORGANIZAÇÃO DE CÓDIGO =====

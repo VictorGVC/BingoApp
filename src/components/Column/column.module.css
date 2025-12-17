@@ -1,0 +1,21 @@
+.column {
+    min-width: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+
+    height: 80vh;
+}
+.header {
+    margin-top: 10px;
+    background: var(--color-primary);
+    color: var(--color-grey-100);
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-big);
+    font-size: var(--size-big);
+}
